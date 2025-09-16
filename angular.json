@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "final-project": {
+    "task3": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/final-project",
+            "outputPath": "dist/task3",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -24,16 +24,16 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+           "styles": [
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
                 "node_modules/bootstrap-icons/font/bootstrap-icons.css"
 
-            ],
-            "scripts": [
-                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+           ],
+"scripts": [
+  "node_modules/bootstrap/dist/js/bootstrap.min.js"
+],
 
-            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "final-project:build:production"
+              "buildTarget": "task3:build:production"
             },
             "development": {
-              "buildTarget": "final-project:build:development"
+              "buildTarget": "task3:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "final-project:build"
+            "buildTarget": "task3:build"
           }
         },
         "test": {
@@ -102,8 +102,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "2b8a2dc0-3554-48f7-9bc8-a02a2527026c"
   }
 }

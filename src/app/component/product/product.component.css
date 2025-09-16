@@ -1,0 +1,128 @@
+
+body {
+  background: linear-gradient(to bottom, #fdf5e6, #fbeec1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.banner-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%); 
+}
+
+
+.banner-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f5deb3; 
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+
+input.form-control {
+  border: 2px solid #8b4513; 
+  border-radius: 25px;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+input.form-control:focus {
+  border-color: #daa520; 
+  box-shadow: 0 0 10px rgba(218, 165, 32, 0.6);
+}
+
+
+.btn-outline-primary {
+  border-radius: 25px;
+  padding: 6px 20px;
+  font-weight: 600;
+  color: #8b4513;
+  border-color: #8b4513;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary.active {
+  background-color: #daa520; 
+  border-color: #daa520;
+  color: #fff;
+}
+
+
+.card {
+  border-radius: 15px;
+  background-color: #fffdf5;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #f5deb3;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #5c4033; 
+}
+
+
+.badge {
+  background-color: #daa520; 
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+
+
+
+.search-box {
+  max-width: 400px;     
+  margin: 0 auto 20px;  
+  position: relative;
+}
+
+.search-box input {
+  border-radius: 30px;
+  padding: 10px 40px 10px 20px; 
+  border: 2px solid #8b4513;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.search-box input:focus {
+  border-color: #daa520; 
+  box-shadow: 0 0 8px rgba(218, 165, 32, 0.5);
+  outline: none;
+}
+
+
+.search-box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8b4513;
+  font-size: 1.1rem;
+}

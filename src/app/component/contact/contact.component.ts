@@ -1,12 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';  // ← مهم جداً
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, FormsModule],  // ← أضفنا FormsModule هنا
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
+  userName: string = '';
+  userEmail: string = '';
+  userMessage: string = '';
 
 }

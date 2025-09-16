@@ -1,5 +1,5 @@
 {
-  "name": "final-project",
+  "name": "task3",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:final-project": "node dist/final-project/server/server.mjs"
+    "serve:ssr:task3": "node dist/task3/server/server.mjs"
   },
   "private": true,
   "dependencies": {

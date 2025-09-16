@@ -1,8 +1,17 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './component/home/home.component';
+import { ProductComponent } from './component/product/product.component';
+import { NotfoundComponent } from './component/notfound/notfound.component';
 import { ContactComponent } from './component/contact/contact.component';
+//import { AddProductComponent } from './component/add-product/add-product.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
- ] 
+    {path:'home',component:HomeComponent},
+    {path:'product',component:ProductComponent},
+    {path:'contact',component: ContactComponent},
+    {path:'',  redirectTo: 'home', pathMatch:'full'},
+   // {path:'product/:id',component:AddProductComponent},
+
+    {path:'**',component:NotfoundComponent},
+];
 

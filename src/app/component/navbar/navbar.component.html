@@ -29,12 +29,12 @@
 </div>
 
 <!-- Navbar أساسي -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-solid bg-solid">
   <div class="container-fluid">
 
     <!-- اللوجو -->
     <a class="navbar-brand ms-3" [routerLink]="['/']">
-      <i class="bi bi-fork-knife"></i> &nbsp; BAKERY SWEET
+       BAKERY SWEET<i class="bi bi-fork-knife"></i>
     </a>
 
     <!-- زرار الموبايل -->
@@ -43,27 +43,44 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- اللينكات -->
+
+    <!-- اللينكات في النص -->
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav d-flex flex-row gap-4">
         <li class="nav-item">
-          <a class="nav-link active" [routerLink]="['/']" routerLinkActive="active">HOME</a>
+          <a class="nav-link custom-link"
+             [class.active-link]="activeLink === 'home'"
+             routerLink="/home">
+            HOME
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/about']" routerLinkActive="active">ABOUT</a>
+          <a class="nav-link custom-link"
+             [class.active-link]="activeLink === 'about'"
+             routerLink="/about">
+            ABOUT
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/products']" routerLinkActive="active">PRODUCTS</a>
+          <a class="nav-link custom-link"
+             [class.active-link]="activeLink === 'product'"
+             routerLink="/product">
+            PRODUCT
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active">CONTACT</a>
+          <a class="nav-link custom-link"
+             [class.active-link]="activeLink === 'contact'"
+             routerLink="/contact">
+            CONTACT
+          </a>
         </li>
       </ul>
     </div>
 
     <!-- Cart في أقصى اليمين -->
-    <div class="d-flex align-items-center me-4">
-      <a class="nav-link text-white" [routerLink]="['/cart']">Cart 🛒</a>
+    <div class="position-absolute end-0 me-4">
+      <a class="nav-link text-white" routerLink="/cart">Cart 🛒</a>
     </div>
 
   </div>
