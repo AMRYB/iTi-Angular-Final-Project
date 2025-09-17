@@ -5,6 +5,7 @@ import { NotfoundComponent } from './component/notfound/notfound.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { AboutComponent } from '../../about.component';
 //import { AddProductComponent } from './component/add-product/add-product.component';
+//hb
 
 export const routes: Routes = [
     {path:'home',component:HomeComponent},
