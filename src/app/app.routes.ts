@@ -1,3 +1,5 @@
+
+//..
 import { Routes } from '@angular/router';
 import { HomeComponent } from './component/home/home.component';
 import { ProductComponent } from './component/product/product.component';
@@ -13,6 +15,5 @@ export const routes: Routes = [
     {path:'',  redirectTo: 'home', pathMatch:'full'},
  
 
-    {path:'**',component:NotfoundComponent},
+    {path:'**',component:ProductComponent},
 ];
-//..

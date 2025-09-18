@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Admin Dashboard</title>
+      <link rel="stylesheet" href="./assets/css/styles.css" />
+   </head>
+   <body>
+      <div class="container">
+         <div class="header">
+            <div class="logo">
+               <img src="./assets/images/Amr.jpg" alt="me" class="logo-img" />
+               <div>
+                  <div>Amr Yasser Badr</div>
+                  <div class="sub">Manage categories & items</div>
+               </div>
+            </div>
+            <div class="gratitude-card" role="status" aria-live="polite">
+               <img id="gratitude-img" alt="person" />
+               <div class="txt">
+                  <div class="made">Made with &#10084; by</div>
+                  <div class="name" id="gratitude-name"></div>
+               </div>
+            </div>
+         </div>
+         <div class="grid">
+            <div class="panel">
+               <div class="tabs">
+                  <button class="tab active" id="tab-products">Products</button>
+                  <button class="tab" id="tab-categories">Categories</button>
+               </div>
+               <div id="products-form-wrap">
+                  <h2 id="product-form-title">Add Product</h2>
+                  <form id="product-form" class="form">
+                     <input type="hidden" id="product-id" />
+                     <div class="row cols-2">
+                        <div>
+                           <label for="product-name">Name</label>
+                           <input id="product-name" type="text" placeholder="e.g., Butter Croissant" required />
+                        </div>
+                        <div>
+                           <label for="product-price">Price (EGP)</label>
+                           <input id="product-price" type="number" min="0" step="0.1" placeholder="e.g., 15" required />
+                        </div>
+                     </div>
+                     <div class="row cols-2">
+                        <div>
+                           <label for="product-qty">Quantity</label>
+                           <input id="product-qty" type="number" min="0" step="1" placeholder="e.g., 20" required />
+                        </div>
+                        <div>
+                           <label for="product-category">Category</label>
+                           <select id="product-category" required></select>
+                        </div>
+                     </div>
+                     <div>
+                        <label for="product-image">Image URL</label>
+                        <input id="product-image" type="text" placeholder="e.g., https://..." />
+                     </div>
+                     <div>
+                        <label for="product-desc">Description</label>
+                        <textarea id="product-desc" placeholder="Short, tasty description..."></textarea>
+                     </div>
+                     <div class="actions">
+                        <button class="btn primary" type="submit" id="product-save">Save</button>
+                        <button class="btn" type="button" id="product-reset">Reset</button>
+                        <span id="product-msg" class="msg" style="display:none"></span>
+                     </div>
+                  </form>
+               </div>
+               <div id="categories-form-wrap" style="display:none">
+                  <h2 id="category-form-title">Add Category</h2>
+                  <form id="category-form" class="form">
+                     <input type="hidden" id="category-id" />
+                     <div>
+                        <label for="category-name">Name</label>
+                        <input id="category-name" type="text" placeholder="e.g., Baked Goods" required />
+                     </div>
+                     <div>
+                        <label for="category-desc">Description</label>
+                        <textarea id="category-desc" placeholder="Describe this category..."></textarea>
+                     </div>
+                     <div class="actions">
+                        <button class="btn primary" type="submit" id="category-save">Save</button>
+                        <button class="btn" type="button" id="category-reset">Reset</button>
+                        <span id="category-msg" class="msg" style="display:none"></span>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="panel">
+               <div class="toolbar">
+                  <div class="left">
+                     <input id="search" type="text" placeholder="Search products..." />
+                     <select id="filter-category">
+                        <option value="">All categories</option>
+                     </select>
+                  </div>
+                  <div class="right">
+                     <span class="badge" id="count-products">0 products</span>
+                     <span class="badge" id="count-categories">0 categories</span>
+                  </div>
+               </div>
+               <div class="table-wrap">
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Item</th>
+                           <th>Category</th>
+                           <th>Price</th>
+                           <th>Qty</th>
+                           <th>Total</th>
+                           <th>Actions</th>
+                        </tr>
+                     </thead>
+                     <tbody id="inventory-body"></tbody>
+                  </table>
+               </div>
+               <div class="stat">
+                  <div>
+                     <div class="k">Total Items in Stock</div>
+                     <div class="v" id="stat-total-qty">0</div>
+                  </div>
+                  <div>
+                     <div class="k">Inventory Value (EGP)</div>
+                     <div class="v" id="stat-total-value">0.00</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="./assets/js/script.js"></script>
+   </body>
+</html>

@@ -5,17 +5,13 @@
   track: string;
   email: string;
 }*/
-
 export interface Iproduct {
   id: number;
   name: string;
-  category: string;
+  description: string;
   image: string;
-  customer?: string;
-  location?: string;
-  startDate?: string;
-  duration?: string;
-  projectSize?: string;
-  description?: string;
-  gallery?: string[];
+  price: number;
+  quantity: number;
+  categoryId: number;
+  categoryName?: string;
 }

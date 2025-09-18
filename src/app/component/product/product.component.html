@@ -1,44 +1,40 @@
-<!--Navbar -->
+<!-- Banner -->
 <div class="w-100 mb-4 text-center">
-  <img 
-    [src]="bannerImage" 
-    alt="Products Banner" 
-    class="img-fluid w-100" 
-    style="height: 300px; object-fit: cover;" 
-  />
-
-  
+  <img
+    [src]="bannerImage"
+    alt="Products Banner"
+    class="img-fluid w-100"
+    style="height: 300px; object-fit: cover;" />
 </div>
 
-
+<!-- Search Input -->
 <div class="container py-4">
-
   <input
     type="text"
     class="form-control mb-4"
-    placeholder="Search about product"
+    placeholder="search "
     [value]="searchText"
-    (input)="onSearchChange($event)"
-  />
-<div class="mb-4 text-center">
-  <button
-    class="btn btn-outline-primary me-2"
-    [class.active]="selectedCategory === ''"
-    (click)="filterByCategory('')"
-  >
-    All
-  </button>
+    (input)="onSearchChange($event)" />
 
-  <button
-    *ngFor="let c of categories"
-    class="btn btn-outline-primary me-2"
-    [class.active]="selectedCategory === c"
-    (click)="filterByCategory(c)"
-  >
-    {{ c }}
-  </button>
-</div>
+  <!-- Category Filter Buttons -->
+  <div class="mb-4 text-center">
+    <button
+      class="btn btn-outline-primary me-2"
+      [class.active]="selectedCategory === null"
+      (click)="filterByCategory(null)">
+      All
+    </button>
 
+    <button
+      *ngFor="let c of categories"
+      class="btn btn-outline-primary me-2"
+      [class.active]="selectedCategory === c.id"
+      (click)="filterByCategory(c.id)">
+      {{ c.name }}
+    </button>
+  </div>
+
+  <!-- Products Grid -->
   <div class="row g-4">
     <div class="col-md-3" *ngFor="let product of filteredProducts">
       <div class="card h-100 shadow-sm">
@@ -46,28 +42,24 @@
           [src]="product.image"
           class="card-img-top"
           [alt]="product.name"
-          style="height: 200px; object-fit: cover;"
-        />
-      <div class="card-body">
-  
-  <span class="badge bg-secondary d-none">{{ product.category }}</span>
-</div>
+          style="height: 200px; object-fit: cover;" />
+
+        <div class="card-body">
+          <span class="badge bg-secondary mb-2">{{ product.categoryName }}</span>
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          
+        </div>
 <div class="card-footer d-flex justify-content-between align-items-center">
- 
-  <h5 class="card-title mt-2 mb-0">{{ product.name }}</h5>
+  <p class="mb-0 fw-bold text-success">Price = {{ product.price }} EGP</p>
 
-</div>
-
-<div class="card-footer d-flex justify-content-end align-items-center">
   <a
     [routerLink]="['/add-product', product.id]"
-    class="btn btn-outline-primary btn-sm rounded-circle d-flex justify-content-center align-items-center me-2"
-    style="width: 35px; height: 35px;"
-  >
+    class="btn btn-outline-primary btn-sm rounded-circle d-flex justify-content-center align-items-center"
+    style="width: 35px; height: 35px;">
     +
   </a>
 </div>
-
       </div>
     </div>
   </div>
