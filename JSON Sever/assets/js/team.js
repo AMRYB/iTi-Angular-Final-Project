@@ -1,24 +1,17 @@
-const center = document.querySelector('.center');
-const lefty = document.querySelector('.lefty');
-const righty = document.querySelector('.righty');
-const start = () => center.classList.add('animate');
-if (document.readyState === 'loading') {
-   document.addEventListener('DOMContentLoaded', start);
+const cards = document.querySelectorAll('.card')
+const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
+if (!mq.matches && 'IntersectionObserver' in window) {
+   const io = new IntersectionObserver((entries, obs) => {
+      entries.forEach(e => {
+         if (e.isIntersecting) {
+            e.target.classList.add('in');
+            obs.unobserve(e.target)
+         }
+      })
+   }, {
+      threshold: .2
+   })
+   cards.forEach(c => io.observe(c))
 } else {
-   start();
-}
-center.addEventListener('animationend', () => {
-   lefty.classList.add('animate');
-});
-lefty.addEventListener('animationend', () => {
-   righty.classList.add('animate');
-});
-const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
-if (mq.matches) {
-   [center, righty, lefty].forEach(el => {
-      el.style.transition = 'none';
-      el.style.animation = 'none';
-      el.style.opacity = 1;
-      el.style.transform = 'none';
-   });
+   cards.forEach(c => c.classList.add('in'))
 }
