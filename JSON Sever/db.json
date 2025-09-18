@@ -1,0 +1,279 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Cakes",
+      "description": "Fresh tortes and cakes"
+    },
+    {
+      "id": "2",
+      "name": "Breads",
+      "description": "Traditional and modern bread"
+    },
+    {
+      "id": "3",
+      "name": "Crunchies",
+      "description": "Crispy and crunchy snacks"
+    },
+    {
+      "id": "4",
+      "name": "Savories",
+      "description": "Delicious savory pastries"
+    },
+    {
+      "id": "5",
+      "name": "Desserts",
+      "description": "Sweet desserts and treats"
+    },
+    {
+      "id": "6",
+      "name": "Cookies",
+      "description": "Different types of cookies"
+    }
+  ],
+  "products": [
+    {
+      "id": "3",
+      "name": "Vanilla Cheesecake",
+      "description": "Classic creamy cheesecake",
+      "image": "https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg",
+      "price": 100,
+      "quantity": 12,
+      "categoryId": 1
+    },
+    {
+      "id": "5",
+      "name": "Red Velvet Cake",
+      "description": "Soft red velvet cream cake",
+      "image": "https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg",
+      "price": 115,
+      "quantity": 9,
+      "categoryId": 1
+    },
+    {
+      "id": "6",
+      "name": "French Baguette",
+      "description": "Classic French bread",
+      "image": "https://images.pexels.com/photos/461060/pexels-photo-461060.jpeg",
+      "price": 15,
+      "quantity": 20,
+      "categoryId": 2
+    },
+    {
+      "id": "7",
+      "name": "Whole Wheat Bread",
+      "description": "Healthy whole grain bread",
+      "image": "https://images.pexels.com/photos/209206/pexels-photo-209206.jpeg",
+      "price": 12,
+      "quantity": 18,
+      "categoryId": 2
+    },
+    {
+      "id": "8",
+      "name": "Sourdough Bread",
+      "description": "Artisan sourdough loaf",
+      "image": "https://images.pexels.com/photos/5079832/pexels-photo-5079832.jpeg",
+      "price": 18,
+      "quantity": 15,
+      "categoryId": 2
+    },
+    {
+      "id": "9",
+      "name": "Pita Bread",
+      "description": "Soft and fluffy pita bread",
+      "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg",
+      "price": 10,
+      "quantity": 25,
+      "categoryId": 2
+    },
+    {
+      "id": "10",
+      "name": "Ciabatta",
+      "description": "Italian rustic bread",
+      "image": "https://images.pexels.com/photos/5060400/pexels-photo-5060400.jpeg",
+      "price": 20,
+      "quantity": 10,
+      "categoryId": 2
+    },
+    {
+      "id": "11",
+      "name": "Pretzels",
+      "description": "Crispy salted pretzels",
+      "image": "https://images.pexels.com/photos/4109994/pexels-photo-4109994.jpeg",
+      "price": 8,
+      "quantity": 30,
+      "categoryId": 3
+    },
+    {
+      "id": "12",
+      "name": "Breadsticks",
+      "description": "Thin crunchy breadsticks",
+      "image": "https://images.pexels.com/photos/1580466/pexels-photo-1580466.jpeg",
+      "price": 7,
+      "quantity": 25,
+      "categoryId": 3
+    },
+    {
+      "id": "13",
+      "name": "Grissini",
+      "description": "Italian-style crispy sticks",
+      "image": "https://images.pexels.com/photos/1627867/pexels-photo-1627867.jpeg",
+      "price": 9,
+      "quantity": 20,
+      "categoryId": 3
+    },
+    {
+      "id": "14",
+      "name": "Crackers",
+      "description": "Light and crispy crackers",
+      "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg",
+      "price": 6,
+      "quantity": 40,
+      "categoryId": 3
+    },
+    {
+      "id": "15",
+      "name": "Cheese Sticks",
+      "description": "Crunchy cheese breadsticks",
+      "image": "https://images.pexels.com/photos/14123/pexels-photo-14123.jpeg",
+      "price": 10,
+      "quantity": 22,
+      "categoryId": 3
+    },
+    {
+      "id": "16",
+      "name": "Spinach Pie",
+      "description": "Savory pie with spinach filling",
+      "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg",
+      "price": 25,
+      "quantity": 15,
+      "categoryId": 4
+    },
+    {
+      "id": "17",
+      "name": "Cheese Puff",
+      "description": "Fluffy puff pastry with cheese",
+      "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg",
+      "price": 18,
+      "quantity": 20,
+      "categoryId": 4
+    },
+    {
+      "id": "18",
+      "name": "Meat Pie",
+      "description": "Savory pie with minced meat",
+      "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg",
+      "price": 30,
+      "quantity": 10,
+      "categoryId": 4
+    },
+    {
+      "id": "19",
+      "name": "Samosa",
+      "description": "Crispy pastry with spiced filling",
+      "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg",
+      "price": 12,
+      "quantity": 25,
+      "categoryId": 4
+    },
+    {
+      "id": "20",
+      "name": "Mini Pizza",
+      "description": "Small savory pizzas",
+      "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg",
+      "price": 20,
+      "quantity": 18,
+      "categoryId": 4
+    },
+    {
+      "id": "21",
+      "name": "Baklava",
+      "description": "Layers of filo with nuts and syrup",
+      "image": "https://images.pexels.com/photos/4109994/pexels-photo-4109994.jpeg",
+      "price": 40,
+      "quantity": 12,
+      "categoryId": 5
+    },
+    {
+      "id": "22",
+      "name": "Kunafa",
+      "description": "Shredded pastry with cheese",
+      "image": "https://images.pexels.com/photos/2144200/pexels-photo-2144200.jpeg",
+      "price": 35,
+      "quantity": 10,
+      "categoryId": 5
+    },
+    {
+      "id": "23",
+      "name": "Basbousa",
+      "description": "Semolina cake with syrup",
+      "image": "https://images.pexels.com/photos/2144200/pexels-photo-2144200.jpeg",
+      "price": 25,
+      "quantity": 20,
+      "categoryId": 5
+    },
+    {
+      "id": "24",
+      "name": "Mahalabia",
+      "description": "Creamy milk pudding",
+      "image": "https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg",
+      "price": 15,
+      "quantity": 30,
+      "categoryId": 5
+    },
+    {
+      "id": "25",
+      "name": "Rice Pudding",
+      "description": "Sweet rice and milk dessert",
+      "image": "https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg",
+      "price": 18,
+      "quantity": 22,
+      "categoryId": 5
+    },
+    {
+      "id": "26",
+      "name": "Chocolate Chip Cookies",
+      "description": "Crunchy cookies with chocolate chips",
+      "image": "https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg",
+      "price": 10,
+      "quantity": 50,
+      "categoryId": 6
+    },
+    {
+      "id": "27",
+      "name": "Oatmeal Cookies",
+      "description": "Healthy oatmeal cookies",
+      "image": "https://images.pexels.com/photos/4109994/pexels-photo-4109994.jpeg",
+      "price": 9,
+      "quantity": 40,
+      "categoryId": 6
+    },
+    {
+      "id": "28",
+      "name": "Butter Cookies",
+      "description": "Classic Danish butter cookies",
+      "image": "https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg",
+      "price": 12,
+      "quantity": 35,
+      "categoryId": 6
+    },
+    {
+      "id": "29",
+      "name": "Peanut Butter Cookies",
+      "description": "Soft cookies with peanut butter",
+      "image": "https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg",
+      "price": 11,
+      "quantity": 28,
+      "categoryId": 6
+    },
+    {
+      "id": "30",
+      "name": "Gingerbread Cookies",
+      "description": "Spiced gingerbread cookies",
+      "image": "https://images.pexels.com/photos/4109994/pexels-photo-4109994.jpeg",
+      "price": 13,
+      "quantity": 25,
+      "categoryId": 6
+    }
+  ]
+}
