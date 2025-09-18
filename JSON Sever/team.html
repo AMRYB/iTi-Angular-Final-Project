@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="RTL">  <!-- Hands off kid!! -->
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Project Team</title>
+      <link rel="stylesheet" href="./assets/css/team.css" />
+      <style>
+         .half {
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         width: 50%;
+         z-index: 3
+         }
+         .half.left {
+         left: 0
+         }
+         .half.right {
+         right: 0
+         }
+         .half::after {
+         content: "";
+         position: absolute;
+         inset: 0;
+         opacity: 0;
+         transition: .3s ease;
+         pointer-events: none;
+         -webkit-mask-image: var(--img);
+         mask-image: var(--img);
+         -webkit-mask-repeat: no-repeat;
+         mask-repeat: no-repeat;
+         -webkit-mask-position: center;
+         mask-position: center;
+         -webkit-mask-size: contain;
+         mask-size: contain;
+         mix-blend-mode: multiply;
+         }
+         .half.left::after {
+         clip-path: inset(0 50% 0 0);
+         }
+         .half.right::after {
+         clip-path: inset(0 0 0 50%);
+         }
+         .half.left:hover::after {
+         opacity: 1;
+         }
+         .half.right:hover::after {
+         opacity: 1;
+         }
+         .half.left::after {
+         background:
+         url('./assets/images/github.png') left 25% bottom 36% / 25% no-repeat,
+         linear-gradient(to top, rgba(24, 23, 23, .65) 0%, rgba(24, 23, 23, .65) 30%, rgba(24, 23, 23, 0) 50%);
+         }
+         .half.right::after {
+         background:
+         url('./assets/images/linkedin.png') right 30% bottom 35% / 25% no-repeat,
+         linear-gradient(to top, rgba(10, 102, 194, .65) 0%, rgba(10, 102, 194, .65) 30%, rgba(255, 255, 255, 0) 50%);
+         }
+      </style>
+   </head>
+   <body>
+      <h1>Contributors</h1>
+      <section class="grid" id="team">
+         <article class="card" aria-labelledby="name-suzan">
+            <div class="media" style="--img:url('./assets/images/Suzan.png')">
+               <div class="person" style="background-image:url('./assets/images/Suzan.png')">
+                  <a class="half left suzan-github" href="https://github.com/suzan-pixel" target="_blank" rel="noopener"></a>
+                  <a class="half right suzan-linkedin" href="https://www.linkedin.com/in/suzan-elbadry-9a7503357" target="_blank" rel="noopener"></a>
+               </div>
+            </div>
+            <div class="meta">
+               <h2 class="name" id="name-suzan">Suzan Elbadry</h2>
+               <p class="role">Frontend Engineer</p>
+            </div>
+         </article>
+         <article class="card" aria-labelledby="name-amr">
+            <div class="media" style="--img:url('./assets/images/Amr.png')">
+               <div class="person" style="background-image:url('./assets/images/Amr.png')">
+                  <a class="half left amr-github" href="https://github.com/AMRYB" target="_blank" rel="noopener"></a>
+                  <a class="half right amr-linkedin" href="https://www.linkedin.com/in/amryb" target="_blank" rel="noopener"></a>
+               </div>
+            </div>
+            <div class="meta">
+               <h2 class="name" id="name-amr">Amr Yasser</h2>
+               <p class="role">Full-Stack Developer</p>
+            </div>
+         </article>
+         <article class="card" aria-labelledby="name-habiba">
+            <div class="media" style="--img:url('./assets/images/Habiba.png')">
+               <div class="person" style="background-image:url('./assets/images/Habiba.png')">
+                  <a class="half left habiba-github" href="https://github.com/HabibaTarek2132006" target="_blank" rel="noopener"></a>
+                  <a class="half right habiba-linkedin" href="https://www.linkedin.com/in/habiba-tarek-637b16356" target="_blank" rel="noopener"></a>
+               </div>
+            </div>
+            <div class="meta">
+               <h2 class="name" id="name-habiba">Habiba Tarek</h2>
+               <p class="role">UI/UX & Frontend</p>
+            </div>
+         </article>
+      </section>
+      <script src="./assets/js/team.js"></script>
+   </body>
+</html>
