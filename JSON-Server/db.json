@@ -8,7 +8,7 @@
     { "id": "6", "name": "Biscuits and Cookies", "description": "Biscuits, petit four, and cookies" },
     { "id": "7", "name": "Eid Sweets", "description": "Kahk, ghorayeba, and holiday treats" }
   ],
-  "products": [
+  "product": [
     { "id": "1", "name": "Chocolate Torte", "description": "Rich chocolate layered torte", "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Chocolate-Hazelnut-Torte_EXPS_HBMZ18_40859_E07_12_5b.jpg", "price": 120, "quantity": 10, "categoryId": 1 },
     { "id": "2", "name": "Gateau Chateau", "description": "Soft chocolate cake with sauce", "image": "https://recettes.maison-demarle.com/wp-content/uploads/2024/01/Gateau-chateau-768x1024.webp", "price": 90, "quantity": 12, "categoryId": 1 },
     { "id": "3", "name": "Orange Cake", "description": "Fluffy orange flavored cake", "image": "https://www.simplyrecipes.com/thmb/NhkurEKLjkhla1LGqCXe8GlPQDg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Whole-Orange-Cake-3-2-f3363a78633e440e8fceac928523e88e.jpg", "price": 70, "quantity": 15, "categoryId": 1 },
