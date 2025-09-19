@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:task3": "node dist/task3/server/server.mjs"
+    "serve:ssr:task3": "node dist/task3/server/server.mjs",
+    "json-server": "json-server --watch JSON-Server/db.json --port 3000"
   },
   "private": true,
   "dependencies": {

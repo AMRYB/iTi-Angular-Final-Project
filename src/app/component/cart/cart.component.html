@@ -1,0 +1,107 @@
+<div class="container py-4" dir="ltr">
+  <h3 class="mb-4">Shopping Cart</h3>
+
+  <div class="table-responsive mb-4" *ngIf="cart.getItems().length; else empty">
+    <table class="table align-middle">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Product</th>
+          <th>Price</th>
+          <th style="width:120px">Qty</th>
+          <th>Total</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let it of cart.getItems(); index as i">
+          <td>{{ i + 1 }}</td>
+          <td class="d-flex align-items-center gap-2">
+            <img [src]="it.product.image" alt="" width="48" height="48" style="object-fit:cover;border-radius:8px" />
+            <div>
+              <div class="fw-semibold">{{ it.product.name }}</div>
+              <small class="text-muted">ID: {{ it.product.id }}</small>
+            </div>
+          </td>
+          <td>{{ it.product.price || 0 }} EGP</td>
+          <td>
+            <input type="number" min="1" class="form-control" [value]="it.qty" (change)="onQtyChangeEvt(it.product.id, $event)" />
+          </td>
+          <td>{{ (it.product.price || 0) * it.qty }} EGP</td>
+          <td>
+            <button class="btn btn-sm btn-outline-danger" (click)="onRemove(it.product.id)">Remove</button>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="4" class="text-end">Total الفرعي</th>
+          <th colspan="2">{{ subTotal() }} EGP</th>
+        </tr>
+        <tr *ngIf="includeShipping()">
+          <th colspan="4" class="text-end">Shipping</th>
+          <th colspan="2">{{ cart.shippingFee }} EGP</th>
+        </tr>
+        <tr class="table-light">
+          <th colspan="4" class="text-end">Total الكلي</th>
+          <th colspan="2">{{ grandTotal() }} EGP</th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <ng-template #empty>
+    <div class="alert alert-info">Your cart is empty.</div>
+  </ng-template>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label">First Name</label>
+      <input class="form-control" formControlName="firstName" />
+      <div class="invalid-feedback d-block" *ngIf="form.controls.firstName.touched && form.controls.firstName.invalid">
+        Please enter a valid name
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Last Name</label>
+      <input class="form-control" formControlName="lastName" />
+      <div class="invalid-feedback d-block" *ngIf="form.controls.lastName.touched && form.controls.lastName.invalid">
+        Please enter a valid name
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label">Address</label>
+      <input class="form-control" formControlName="address" />
+      <div class="invalid-feedback d-block" *ngIf="form.controls.address.touched && form.controls.address.invalid">
+        Please enter a valid address
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Phone</label>
+      <input class="form-control" formControlName="phone" />
+      <div class="invalid-feedback d-block" *ngIf="form.controls.phone.touched && form.controls.phone.invalid">
+        Please enter a valid phone number
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Email</label>
+      <input class="form-control" formControlName="email" />
+      <div class="invalid-feedback d-block" *ngIf="form.controls.email.touched && form.controls.email.invalid">
+        Please enter a valid email
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label">Notes (optional)</label>
+      <textarea class="form-control" rows="3" formControlName="notes"></textarea>
+    </div>
+
+    <div class="col-12 d-flex gap-2">
+      <button class="btn btn-primary" type="submit">Confirm Payment</button>
+      <span class="align-self-center text-muted">(30 EGP shipping will be added when the form is valid)</span>
+    </div>
+  </form>
+</div>

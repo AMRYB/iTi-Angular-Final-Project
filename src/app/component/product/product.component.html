@@ -54,7 +54,7 @@
   <p class="mb-0 fw-bold text-success">Price = {{ product.price }} EGP</p>
 
   <a
-    [routerLink]="['/add-product', product.id]"
+    (click)="$event.preventDefault(); addToCart(product)" href="#"
     class="btn btn-outline-primary btn-sm rounded-circle d-flex justify-content-center align-items-center"
     style="width: 35px; height: 35px;">
     +
@@ -67,3 +67,7 @@
 
 
 
+
+<!-- زر الإضافة للسلة -->
+<!-- ضع الزر داخل كارت كل منتج داخل *ngFor -->
+<!-- مثال: <a class="btn btn-sm btn-primary" (click)=\"addToCart(p)\">+</a> -->
