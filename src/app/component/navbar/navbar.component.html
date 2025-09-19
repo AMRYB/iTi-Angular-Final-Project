@@ -1,8 +1,6 @@
 
 <div class="bg-light py-2 border-bottom">
   <div class="container d-flex justify-content-between align-items-center">
-
-  
     <div class="d-flex align-items-center">
       <a href="/" class="text-dark me-3">
         <i class="bi bi-globe"></i> LANGUAGES
@@ -15,7 +13,6 @@
       </a>
     </div>
 
-   
     <div class="d-flex align-items-center">
       <a href="/" class="text-dark me-3">
         <i class="bi bi-cup-straw"></i> HAPPY HOUR
@@ -24,62 +21,55 @@
         <i class="bi bi-bicycle"></i> FOOD DELIVERY
       </a>
     </div>
-
   </div>
 </div>
 
 
 <nav class="navbar navbar-expand-lg navbar-solid bg-solid">
-  <div class="container-fluid">
+  <div class="container">
 
-   
+    <!-- اللوجو -->
     <a class="navbar-brand ms-3" [routerLink]="['/']">
-       BAKERY SWEET<i class="bi bi-fork-knife"></i>
+      BAKERY SWEET <i class="bi bi-fork-knife"></i>
     </a>
 
-
+    <!-- زرار التوجّل -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-
-    
+    <!-- اللينكات في النص -->
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav d-flex flex-row gap-4">
+      <ul class="navbar-nav gap-4">
         <li class="nav-item">
           <a class="nav-link custom-link"
              [class.active-link]="activeLink === 'home'"
-             routerLink="/home">
-            HOME
-          </a>
+             routerLink="/home">HOME</a>
         </li>
         <li class="nav-item">
           <a class="nav-link custom-link"
              [class.active-link]="activeLink === 'about'"
-             routerLink="/about">
-            ABOUT
-          </a>
+             routerLink="/about">ABOUT</a>
         </li>
         <li class="nav-item">
           <a class="nav-link custom-link"
              [class.active-link]="activeLink === 'product'"
-             routerLink="/product">
-            PRODUCT
-          </a>
+             routerLink="/product">PRODUCT</a>
         </li>
         <li class="nav-item">
           <a class="nav-link custom-link"
              [class.active-link]="activeLink === 'contact'"
-             routerLink="/contact">
-            CONTACT
-          </a>
+             routerLink="/contact">CONTACT</a>
         </li>
       </ul>
     </div>
 
-    <div class="position-absolute end-0 me-4">
-      <a class="nav-link text-white" routerLink="/cart">Cart 🛒</a>
+    <!-- زر الـCart ناحية اليمين -->
+    <div class="d-flex">
+      <a class="nav-link text-white btn btn-warning px-3 ms-lg-3" routerLink="/cart">
+        🛒 Cart
+      </a>
     </div>
 
   </div>
