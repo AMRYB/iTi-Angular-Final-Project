@@ -1,279 +1,78 @@
 {
   "categories": [
-    {
-      "id": "1",
-      "name": "Cakes",
-      "description": "Fresh tortes and cakes"
-    },
-    {
-      "id": "2",
-      "name": "Breads",
-      "description": "Traditional and modern bread"
-    },
-    {
-      "id": "3",
-      "name": "Crunchies",
-      "description": "Crispy and crunchy snacks"
-    },
-    {
-      "id": "4",
-      "name": "Savories",
-      "description": "Delicious savory pastries"
-    },
-    {
-      "id": "5",
-      "name": "Desserts",
-      "description": "Sweet desserts and treats"
-    },
-    {
-      "id": "6",
-      "name": "Cookies",
-      "description": "Different types of cookies"
-    }
+    { "id": "1", "name": "Cakes and Tortes", "description": "Tortes and Western cakes" },
+    { "id": "2", "name": "Breads", "description": "Traditional and modern breads" },
+    { "id": "3", "name": "Oriental Sweets", "description": "Famous Egyptian oriental sweets" },
+    { "id": "4", "name": "Savory Pastries", "description": "Croissants, pies, and patties" },
+    { "id": "5", "name": "Cold Desserts", "description": "Cold and refreshing desserts" },
+    { "id": "6", "name": "Biscuits and Cookies", "description": "Biscuits, petit four, and cookies" },
+    { "id": "7", "name": "Eid Sweets", "description": "Kahk, ghorayeba, and holiday treats" }
   ],
-  "product": [
-    {
-      "id": "3",
-      "name": "Vanilla Cheesecake",
-      "description": "Classic creamy cheesecake",
-      "image": "https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg",
-      "price": 100,
-      "quantity": 12,
-      "categoryId": 1
-    },
-    {
-      "id": "5",
-      "name": "Red Velvet Cake",
-      "description": "Soft red velvet cream cake",
-      "image": "https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg",
-      "price": 115,
-      "quantity": 9,
-      "categoryId": 1
-    },
-    {
-      "id": "6",
-      "name": "French Baguette",
-      "description": "Classic French bread",
-      "image": "https://images.pexels.com/photos/461060/pexels-photo-461060.jpeg",
-      "price": 15,
-      "quantity": 20,
-      "categoryId": 2
-    },
-    {
-      "id": "7",
-      "name": "Whole Wheat Bread",
-      "description": "Healthy whole grain bread",
-      "image": "https://images.pexels.com/photos/209206/pexels-photo-209206.jpeg",
-      "price": 12,
-      "quantity": 18,
-      "categoryId": 2
-    },
-    {
-      "id": "8",
-      "name": "Sourdough Bread",
-      "description": "Artisan sourdough loaf",
-      "image": "https://images.pexels.com/photos/5079832/pexels-photo-5079832.jpeg",
-      "price": 18,
-      "quantity": 15,
-      "categoryId": 2
-    },
-    {
-      "id": "9",
-      "name": "Pita Bread",
-      "description": "Soft and fluffy pita bread",
-      "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg",
-      "price": 10,
-      "quantity": 25,
-      "categoryId": 2
-    },
-    {
-      "id": "10",
-      "name": "Ciabatta",
-      "description": "Italian rustic bread",
-      "image": "https://images.pexels.com/photos/5060400/pexels-photo-5060400.jpeg",
-      "price": 20,
-      "quantity": 10,
-      "categoryId": 2
-    },
-    {
-      "id": "11",
-      "name": "Pretzels",
-      "description": "Crispy salted pretzels",
-      "image": "https://images.pexels.com/photos/4109994/pexels-photo-4109994.jpeg",
-      "price": 8,
-      "quantity": 30,
-      "categoryId": 3
-    },
-    {
-      "id": "12",
-      "name": "Breadsticks",
-      "description": "Thin crunchy breadsticks",
-      "image": "https://images.pexels.com/photos/1580466/pexels-photo-1580466.jpeg",
-      "price": 7,
-      "quantity": 25,
-      "categoryId": 3
-    },
-    {
-      "id": "13",
-      "name": "Grissini",
-      "description": "Italian-style crispy sticks",
-      "image": "https://images.pexels.com/photos/1627867/pexels-photo-1627867.jpeg",
-      "price": 9,
-      "quantity": 20,
-      "categoryId": 3
-    },
-    {
-      "id": "14",
-      "name": "Crackers",
-      "description": "Light and crispy crackers",
-      "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg",
-      "price": 6,
-      "quantity": 40,
-      "categoryId": 3
-    },
-    {
-      "id": "15",
-      "name": "Cheese Sticks",
-      "description": "Crunchy cheese breadsticks",
-      "image": "https://images.pexels.com/photos/14123/pexels-photo-14123.jpeg",
-      "price": 10,
-      "quantity": 22,
-      "categoryId": 3
-    },
-    {
-      "id": "16",
-      "name": "Spinach Pie",
-      "description": "Savory pie with spinach filling",
-      "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg",
-      "price": 25,
-      "quantity": 15,
-      "categoryId": 4
-    },
-    {
-      "id": "17",
-      "name": "Cheese Puff",
-      "description": "Fluffy puff pastry with cheese",
-      "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg",
-      "price": 18,
-      "quantity": 20,
-      "categoryId": 4
-    },
-    {
-      "id": "18",
-      "name": "Meat Pie",
-      "description": "Savory pie with minced meat",
-      "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg",
-      "price": 30,
-      "quantity": 10,
-      "categoryId": 4
-    },
-    {
-      "id": "19",
-      "name": "Samosa",
-      "description": "Crispy pastry with spiced filling",
-      "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg",
-      "price": 12,
-      "quantity": 25,
-      "categoryId": 4
-    },
-    {
-      "id": "20",
-      "name": "Mini Pizza",
-      "description": "Small savory pizzas",
-      "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg",
-      "price": 20,
-      "quantity": 18,
-      "categoryId": 4
-    },
-    {
-      "id": "21",
-      "name": "Baklava",
-      "description": "Layers of filo with nuts and syrup",
-      "image": "https://images.pexels.com/photos/4109994/pexels-photo-4109994.jpeg",
-      "price": 40,
-      "quantity": 12,
-      "categoryId": 5
-    },
-    {
-      "id": "22",
-      "name": "Kunafa",
-      "description": "Shredded pastry with cheese",
-      "image": "https://images.pexels.com/photos/2144200/pexels-photo-2144200.jpeg",
-      "price": 35,
-      "quantity": 10,
-      "categoryId": 5
-    },
-    {
-      "id": "23",
-      "name": "Basbousa",
-      "description": "Semolina cake with syrup",
-      "image": "https://images.pexels.com/photos/2144200/pexels-photo-2144200.jpeg",
-      "price": 25,
-      "quantity": 20,
-      "categoryId": 5
-    },
-    {
-      "id": "24",
-      "name": "Mahalabia",
-      "description": "Creamy milk pudding",
-      "image": "https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg",
-      "price": 15,
-      "quantity": 30,
-      "categoryId": 5
-    },
-    {
-      "id": "25",
-      "name": "Rice Pudding",
-      "description": "Sweet rice and milk dessert",
-      "image": "https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg",
-      "price": 18,
-      "quantity": 22,
-      "categoryId": 5
-    },
-    {
-      "id": "26",
-      "name": "Chocolate Chip Cookies",
-      "description": "Crunchy cookies with chocolate chips",
-      "image": "https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg",
-      "price": 10,
-      "quantity": 50,
-      "categoryId": 6
-    },
-    {
-      "id": "27",
-      "name": "Oatmeal Cookies",
-      "description": "Healthy oatmeal cookies",
-      "image": "https://images.pexels.com/photos/4109994/pexels-photo-4109994.jpeg",
-      "price": 9,
-      "quantity": 40,
-      "categoryId": 6
-    },
-    {
-      "id": "28",
-      "name": "Butter Cookies",
-      "description": "Classic Danish butter cookies",
-      "image": "https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg",
-      "price": 12,
-      "quantity": 35,
-      "categoryId": 6
-    },
-    {
-      "id": "29",
-      "name": "Peanut Butter Cookies",
-      "description": "Soft cookies with peanut butter",
-      "image": "https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg",
-      "price": 11,
-      "quantity": 28,
-      "categoryId": 6
-    },
-    {
-      "id": "30",
-      "name": "Gingerbread Cookies",
-      "description": "Spiced gingerbread cookies",
-      "image": "https://images.pexels.com/photos/4109994/pexels-photo-4109994.jpeg",
-      "price": 13,
-      "quantity": 25,
-      "categoryId": 6
-    }
+  "products": [
+    { "id": "1", "name": "Chocolate Torte", "description": "Rich chocolate layered torte", "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Chocolate-Hazelnut-Torte_EXPS_HBMZ18_40859_E07_12_5b.jpg", "price": 120, "quantity": 10, "categoryId": 1 },
+    { "id": "2", "name": "Gateau Chateau", "description": "Soft chocolate cake with sauce", "image": "https://recettes.maison-demarle.com/wp-content/uploads/2024/01/Gateau-chateau-768x1024.webp", "price": 90, "quantity": 12, "categoryId": 1 },
+    { "id": "3", "name": "Orange Cake", "description": "Fluffy orange flavored cake", "image": "https://www.simplyrecipes.com/thmb/NhkurEKLjkhla1LGqCXe8GlPQDg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Whole-Orange-Cake-3-2-f3363a78633e440e8fceac928523e88e.jpg", "price": 70, "quantity": 15, "categoryId": 1 },
+    { "id": "4", "name": "Yogurt Cake", "description": "Traditional soft yogurt cake", "image": "https://static01.nyt.com/images/2021/11/03/dining/01rodenrex2-cake/01rodenrex2-cake-threeByTwoMediumAt2X.jpg", "price": 65, "quantity": 20, "categoryId": 1 },
+    { "id": "5", "name": "Strawberry Torte", "description": "Torte topped with fresh strawberries", "image": "https://livingoncookies.com/wp-content/uploads/2019/06/IMG_1423ae1.jpg", "price": 140, "quantity": 8, "categoryId": 1 },
+    { "id": "6", "name": "Swiss Roll", "description": "Rolled sponge cake with cream filling", "image": "https://bakingamoment.com/wp-content/uploads/2024/04/IMG_0427-swiss-roll-cake.jpg", "price": 60, "quantity": 18, "categoryId": 1 },
+    { "id": "7", "name": "Mango Cheesecake", "description": "Cheesecake topped with mango", "image": "https://thecookingfoodie.com/wp-content/uploads/2023/08/IMG_0388-2-scaled.jpg", "price": 110, "quantity": 9, "categoryId": 1 },
+    { "id": "8", "name": "Carrot Cake", "description": "Moist carrot cake with nuts", "image": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2007/2/16/0/ry0401_carrotcake.jpg.rend.hgtvcom.1280.960.suffix/1552488933139.webp", "price": 95, "quantity": 14, "categoryId": 1 },
+    { "id": "9", "name": "Red Velvet Cake", "description": "Classic red velvet with cream cheese", "image": "https://thescranline.com/wp-content/uploads/2023/06/RED-VELVET-CAKE-23-S-01.jpg", "price": 130, "quantity": 11, "categoryId": 1 },
+    { "id": "10", "name": "Lemon Cake", "description": "Soft lemon flavored cake", "image": "https://preppykitchen.com/wp-content/uploads/2022/06/Lemon-Cake-Recipe.jpg", "price": 80, "quantity": 16, "categoryId": 1 },
+
+    { "id": "11", "name": "Baladi Bread", "description": "Traditional Egyptian flatbread", "image": "https://cdn.breadfast.com/wp-content/uploads/2021/09/Balady-bread-blog-900x450.jpg", "price": 2, "quantity": 100, "categoryId": 2 },
+    { "id": "12", "name": "Fino Bread", "description": "Soft fino rolls", "image": "https://images.pexels.com/photos/209206/pexels-photo-209206.jpeg", "price": 3, "quantity": 80, "categoryId": 2 },
+    { "id": "13", "name": "Shami Bread", "description": "Round flat shami bread", "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2012/07/pita-bread-3.jpg", "price": 2, "quantity": 90, "categoryId": 2 },
+    { "id": "14", "name": "Kaiser Roll", "description": "Fresh soft kaiser bread", "image": "https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/f8250de54eed6ea5ed7931eb5d74a2dd/Derivates/f0a0e61a6c090f0fd58b1a96345a94877eb6152c.jpg", "price": 5, "quantity": 50, "categoryId": 2 },
+    { "id": "15", "name": "Toast Bread", "description": "Classic white toast", "image": "https://images.pexels.com/photos/461060/pexels-photo-461060.jpeg", "price": 15, "quantity": 30, "categoryId": 2 },
+    { "id": "16", "name": "Bran Bread", "description": "Healthy bran bread", "image": "https://images.pexels.com/photos/5079832/pexels-photo-5079832.jpeg", "price": 6, "quantity": 40, "categoryId": 2 },
+    { "id": "17", "name": "Baton Sale", "description": "Crunchy breadsticks with sesame", "image": "https://images.pexels.com/photos/1580466/pexels-photo-1580466.jpeg", "price": 10, "quantity": 25, "categoryId": 2 },
+    { "id": "18", "name": "Focaccia", "description": "Italian focaccia with olives", "image": "https://images.pexels.com/photos/5060400/pexels-photo-5060400.jpeg", "price": 20, "quantity": 15, "categoryId": 2 },
+
+    { "id": "19", "name": "Basbousa", "description": "Semolina cake with almonds", "image": "https://images.pexels.com/photos/2144200/pexels-photo-2144200.jpeg", "price": 40, "quantity": 20, "categoryId": 3 },
+    { "id": "20", "name": "Konafa", "description": "Shredded pastry with nuts", "image": "https://images.pexels.com/photos/4109994/pexels-photo-4109994.jpeg", "price": 50, "quantity": 18, "categoryId": 3 },
+    { "id": "21", "name": "Balah El Sham", "description": "Fried choux pastry with syrup", "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg", "price": 30, "quantity": 25, "categoryId": 3 },
+    { "id": "22", "name": "Zalabya", "description": "Golden fried dough balls", "image": "https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg", "price": 25, "quantity": 22, "categoryId": 3 },
+    { "id": "23", "name": "Luqaimat", "description": "Sweet fried dumplings", "image": "https://images.pexels.com/photos/4109994/pexels-photo-4109994.jpeg", "price": 20, "quantity": 28, "categoryId": 3 },
+    { "id": "24", "name": "Esh El Bolbol", "description": "Pastry nests with nuts", "image": "https://images.pexels.com/photos/4109994/pexels-photo-4109994.jpeg", "price": 45, "quantity": 15, "categoryId": 3 },
+    { "id": "25", "name": "Harissa", "description": "Sweet semolina cake with syrup", "image": "https://images.pexels.com/photos/2144200/pexels-photo-2144200.jpeg", "price": 35, "quantity": 20, "categoryId": 3 },
+
+    { "id": "26", "name": "Cheese Croissant", "description": "Fluffy croissant with cheese", "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg", "price": 25, "quantity": 20, "categoryId": 4 },
+    { "id": "27", "name": "Chocolate Croissant", "description": "Croissant filled with chocolate", "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg", "price": 28, "quantity": 18, "categoryId": 4 },
+    { "id": "28", "name": "Meat Patty", "description": "Savory patty filled with minced meat", "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg", "price": 30, "quantity": 15, "categoryId": 4 },
+    { "id": "29", "name": "Mini Pizza", "description": "Small savory pizzas", "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg", "price": 20, "quantity": 25, "categoryId": 4 },
+    { "id": "30", "name": "Sausage Patty", "description": "Flaky patty with sausage filling", "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg", "price": 32, "quantity": 14, "categoryId": 4 },
+    { "id": "31", "name": "Meshaltet", "description": "Traditional Egyptian layered pastry", "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg", "price": 35, "quantity": 10, "categoryId": 4 },
+    { "id": "32", "name": "Spinach Pie", "description": "Savory pie with spinach filling", "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg", "price": 27, "quantity": 12, "categoryId": 4 },
+    { "id": "33", "name": "Cheese Sambousek", "description": "Crispy pastry stuffed with cheese", "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg", "price": 22, "quantity": 20, "categoryId": 4 },
+    { "id": "34", "name": "Sausage Roll", "description": "Flaky roll stuffed with sausage", "image": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg", "price": 24, "quantity": 18, "categoryId": 4 },
+
+    { "id": "35", "name": "Creme Caramel", "description": "Caramel custard dessert", "image": "https://www.andy-cooks.com/cdn/shop/articles/20231109060514-andy-20cooks-20-20creme-20caramel.jpg?v=1700090748", "price": 40, "quantity": 20, "categoryId": 5 },
+    { "id": "36", "name": "Mehalabeya", "description": "Creamy milk pudding", "image": "https://cairocooking.com/wp-content/uploads/2016/06/mehalabeyya-2.jpg", "price": 30, "quantity": 25, "categoryId": 5 },
+    { "id": "37", "name": "Rice Pudding", "description": "Sweet rice and milk dessert", "image": "https://eatsdelightful.com/wp-content/uploads/2024/05/eggless-rice-pudding-in-serving-bowl-6-scaled.jpg", "price": 28, "quantity": 22, "categoryId": 5 },
+    { "id": "38", "name": "Fruit Jelly", "description": "Colorful jelly with fruit pieces", "image": "https://pulakoschocolates.com/cdn/shop/products/FruitSlices-05_600x600_crop_center.jpg?v=1568306346", "price": 20, "quantity": 30, "categoryId": 5 },
+    { "id": "39", "name": "Trifle", "description": "Layered sponge with cream and fruit", "image": "https://www.cookingclassy.com/wp-content/uploads/2022/06/trifle-01.jpg", "price": 45, "quantity": 12, "categoryId": 5 },
+    { "id": "40", "name": "Oreo Cheesecake", "description": "Cheesecake with Oreo pieces", "image": "https://recipesblob.oetker.ca/assets/ced561ac4b43469e9b55c673051090f0/308x380/oreo-cheesecake-11.webp", "price": 55, "quantity": 15, "categoryId": 5 },
+    { "id": "41", "name": "Vanilla Ice Cream", "description": "Classic vanilla ice cream", "image": "https://laurenslatest.com/wp-content/uploads/2020/08/vanilla-ice-cream-5-copy.jpg", "price": 25, "quantity": 30, "categoryId": 5 },
+    { "id": "42", "name": "Chocolate Mousse", "description": "Rich chocolate mousse", "image": "https://marleysmenu.com/wp-content/uploads/2020/04/Boozy-Chocolate-Mousse-Featured-Image-1.jpg", "price": 50, "quantity": 14, "categoryId": 5 },
+
+    { "id": "43", "name": "Biscuit Plain Half Kilo", "description": "Plain crunchy biscuits", "image": "https://i.etsystatic.com/26390370/r/il/ac479f/2784398733/il_570xN.2784398733_9ty3.jpg", "price": 60, "quantity": 20, "categoryId": 6 },
+    { "id": "44", "name": "Biscuit Orange Half Kilo", "description": "Biscuits flavored with orange", "image": "https://i.etsystatic.com/26390370/r/il/ac479f/2784398733/il_570xN.2784398733_9ty3.jpg", "price": 65, "quantity": 18, "categoryId": 6 },
+    { "id": "45", "name": "Ghorayeba Half Kilo", "description": "Soft Egyptian shortbread cookies", "image": "https://www.munatycooking.com/wp-content/uploads/2020/07/Ghraybeh-Ghorayeba-feature-image-500x375.jpg", "price": 70, "quantity": 15, "categoryId": 6 },
+    { "id": "46", "name": "Kahk Bel Agwa Half Kilo", "description": "Cookies filled with dates", "image": "https://jeanelleats.com/wp-content/uploads/2024/12/Kahk-Recipe-Jeanelleats-24-edited-648x864.png", "price": 75, "quantity": 12, "categoryId": 6 },
+    { "id": "47", "name": "Kahk Plain Half Kilo", "description": "Plain traditional kahk", "image": "https://cleobuttera.com/wp-content/uploads/2016/06/plain-kahk.jpg", "price": 70, "quantity": 10, "categoryId": 6 },
+    { "id": "48", "name": "Petit Four Half Kilo", "description": "Assorted petit four", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTChTX-nrI5Hoj7iD9w0xkkXJjLq045xsU4eg&s", "price": 80, "quantity": 14, "categoryId": 6 },
+    { "id": "49", "name": "Cookies Chocolate Half Kilo", "description": "Chocolate chip cookies", "image": "https://www.allrecipes.com/thmb/JCMYBY68TG5gPrZLIx8x_AgcVRg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/9827-chocolate-chocolate-chip-cookies-i--DDMFS-092-4x3-c8227481fd804270a50256498cf8f05f.jpg", "price": 65, "quantity": 16, "categoryId": 6 },
+    { "id": "50", "name": "Cookies Oatmeal Half Kilo", "description": "Oatmeal cookies", "image": "https://gimmedelicious.com/wp-content/uploads/2023/07/Peanut-Butter-Protein-Oatmeal-Cookies-1-scaled.jpg", "price": 60, "quantity": 18, "categoryId": 6 },
+    { "id": "51", "name": "Biscuit Nashader Half Kilo", "description": "Egyptian traditional biscuit", "image": "https://i.etsystatic.com/26390370/r/il/ac479f/2784398733/il_570xN.2784398733_9ty3.jpg", "price": 55, "quantity": 15, "categoryId": 6 },
+    { "id": "52", "name": "Biscuit Coconut Half Kilo", "description": "Biscuits flavored with coconut", "image": "https://i.etsystatic.com/26390370/r/il/ac479f/2784398733/il_570xN.2784398733_9ty3.jpg", "price": 65, "quantity": 12, "categoryId": 6 },
+
+    { "id": "53", "name": "Kahk Bel Agwa Half Kilo", "description": "Kahk filled with dates", "image": "https://jeanelleats.com/wp-content/uploads/2024/12/Kahk-Recipe-Jeanelleats-24-edited-648x864.png", "price": 75, "quantity": 15, "categoryId": 7 },
+    { "id": "54", "name": "Kahk Malban Half Kilo", "description": "Kahk filled with malban", "image": "https://m.media-amazon.com/images/I/71BRU+qB-+L.jpg", "price": 80, "quantity": 12, "categoryId": 7 },
+    { "id": "55", "name": "Ghorayeba Half Kilo", "description": "Soft buttery ghorayeba", "image": "https://www.munatycooking.com/wp-content/uploads/2020/07/Ghraybeh-Ghorayeba-feature-image-500x375.jpg", "price": 70, "quantity": 18, "categoryId": 7 },
+    { "id": "56", "name": "Biscuit Nashader Half Kilo", "description": "Traditional Egyptian biscuit", "image": "https://i.etsystatic.com/26390370/r/il/ac479f/2784398733/il_570xN.2784398733_9ty3.jpg", "price": 55, "quantity": 16, "categoryId": 7 },
+    { "id": "57", "name": "PetitFour Half Kilo", "description": "Assorted petit four sweets", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTChTX-nrI5Hoj7iD9w0xkkXJjLq045xsU4eg&s", "price": 85, "quantity": 14, "categoryId": 7 },
+    { "id": "58", "name": "Maamoul Bel Agwa Half Kilo", "description": "Maamoul stuffed with dates", "image": "https://jeanelleats.com/wp-content/uploads/2024/12/Kahk-Recipe-Jeanelleats-24-edited-648x864.png", "price": 90, "quantity": 12, "categoryId": 7 },
+    { "id": "59", "name": "Kahk Sesame Half Kilo", "description": "Kahk covered with sesame", "image": "https://www.munatycooking.com/wp-content/uploads/2024/12/Syrian-Kaak-with-Milk-5.jpg", "price": 80, "quantity": 10, "categoryId": 7 }
   ]
 }
