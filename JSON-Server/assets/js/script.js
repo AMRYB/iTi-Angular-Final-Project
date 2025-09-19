@@ -1,5 +1,5 @@
 /* npx json-server --watch db.json --port 3000 */
-/*-Sercd "JSONver"*/
+/*cd "JSON-server"*/
 
 'use strict';
 

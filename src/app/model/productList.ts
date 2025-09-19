@@ -1,5 +1,5 @@
 
-
+/*
 
 import { Iproduct } from "./iproduct";
 
@@ -70,4 +70,4 @@ export var productList: Iproduct[] =[
 },
 
 ]
-
+*/
