@@ -1,3 +1,4 @@
+
 import { Injectable } from '@angular/core';
 import { Iproduct } from '../model/iproduct';
 
@@ -9,7 +10,7 @@ export interface CartItem {
 @Injectable({ providedIn: 'root' })
 export class CartService {
   private items: CartItem[] = [];
-  readonly shippingFee = 30; // ج شحن
+  readonly shippingFee = 30; 
 
   getItems(): CartItem[] {
     return this.items;
@@ -22,15 +23,18 @@ export class CartService {
   add(product: Iproduct, qty = 1) {
     const found = this.items.find(i => i.product.id === product.id);
     if (found) {
-      found.qty += qty;
+      this.items = this.items.map(i =>
+        i.product.id === product.id ? { ...i, qty: i.qty + qty } : i
+      );
     } else {
-      this.items.push({ product, qty });
+      this.items = [...this.items, { product, qty }];
     }
   }
 
   updateQty(productId: number, qty: number) {
-    const it = this.items.find(i => i.product.id === productId);
-    if (it) it.qty = Math.max(1, qty);
+    this.items = this.items.map(i =>
+      i.product.id === productId ? { ...i, qty: Math.max(1, qty) } : i
+    );
   }
 
   remove(productId: number) {

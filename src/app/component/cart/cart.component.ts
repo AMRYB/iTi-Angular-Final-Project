@@ -1,4 +1,5 @@
-import { Component, computed, inject, signal } from '@angular/core';
+
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
 import { CartService } from '../../service/cart.service';
@@ -14,7 +15,7 @@ export class CartComponent {
   private fb = inject(FormBuilder);
   cart = inject(CartService);
 
-  includeShipping = signal(false);
+  includeShipping = false;
 
   form = this.fb.group({
     firstName: ['', [Validators.required, Validators.minLength(2)]],
@@ -25,8 +26,13 @@ export class CartComponent {
     notes: ['']
   });
 
-  subTotal = computed(() => this.cart.getSubTotal());
-  grandTotal = computed(() => this.cart.getGrandTotal(this.includeShipping()));
+  get subTotal(): number {
+    return this.cart.getSubTotal();
+  }
+
+  get grandTotal(): number {
+    return this.cart.getGrandTotal(this.includeShipping);
+  }
 
   onQtyChange(id: number, v: string) {
     const qty = Number(v);
@@ -40,13 +46,12 @@ export class CartComponent {
   onSubmit() {
     if (this.form.invalid) {
       this.form.markAllAsTouched();
-      this.includeShipping.set(false);
+      this.includeShipping = false;
       return;
     }
-    this.includeShipping.set(true);
+    this.includeShipping = true;
     alert('Your order has been placed');
   }
-
 
   onQtyChangeEvt(id: number, e: Event) {
     const target = e.target as HTMLInputElement | null;

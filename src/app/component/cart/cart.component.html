@@ -33,20 +33,21 @@
           </td>
         </tr>
       </tbody>
-      <tfoot>
-        <tr>
-          <th colspan="4" class="text-end">Total الفرعي</th>
-          <th colspan="2">{{ subTotal() }} EGP</th>
-        </tr>
-        <tr *ngIf="includeShipping()">
-          <th colspan="4" class="text-end">Shipping</th>
-          <th colspan="2">{{ cart.shippingFee }} EGP</th>
-        </tr>
-        <tr class="table-light">
-          <th colspan="4" class="text-end">Total الكلي</th>
-          <th colspan="2">{{ grandTotal() }} EGP</th>
-        </tr>
-      </tfoot>
+    <tfoot>
+  <tr>
+    <th colspan="4" class="text-end">Subtotal</th>
+    <th colspan="2">{{ subTotal }} EGP</th>
+  </tr>
+  <tr *ngIf="includeShipping">
+    <th colspan="4" class="text-end">Shipping</th>
+    <th colspan="2">{{ cart.shippingFee }} EGP</th>
+  </tr>
+  <tr class="table-light">
+    <th colspan="4" class="text-end">Grand Total</th>
+    <th colspan="2">{{ grandTotal }} EGP</th>
+  </tr>
+</tfoot>
+
     </table>
   </div>
   <ng-template #empty>
