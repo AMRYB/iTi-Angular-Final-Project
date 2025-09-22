@@ -1,11 +1,11 @@
 {
   "categories": [
-    { "id": "1", "name": "Cakes and Tortes", "description": "Tortes and Western cakes" },
+    { "id": "1", "name": "Tortes", "description": "Tortes and Western cakes" },
     { "id": "2", "name": "Breads", "description": "Traditional and modern breads" },
-    { "id": "3", "name": "Oriental Sweets", "description": "Famous Egyptian oriental sweets" },
-    { "id": "4", "name": "Savory Pastries", "description": "Croissants, pies, and patties" },
-    { "id": "5", "name": "Cold Desserts", "description": "Cold and refreshing desserts" },
-    { "id": "6", "name": "Biscuits and Cookies", "description": "Biscuits, petit four, and cookies" },
+    { "id": "3", "name": "Oriental", "description": "Famous Egyptian oriental sweets" },
+    { "id": "4", "name": "Pastries", "description": "Croissants, pies, and patties" },
+    { "id": "5", "name": "CDesserts", "description": "Cold and refreshing desserts" },
+    { "id": "6", "name": "Biscuits", "description": "Biscuits, petit four, and cookies" },
     { "id": "7", "name": "Eid Sweets", "description": "Kahk, ghorayeba, and holiday treats" }
   ],
   "product": [

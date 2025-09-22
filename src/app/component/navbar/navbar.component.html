@@ -1,59 +1,82 @@
 <div class="sticky-top">
-<div class="bg-light py-2 border-bottom">
+
+  <div class="bg-white py-2 border-bottom">
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="d-flex align-items-center">
-        <a href="/" class="text-dark me-3"><i class="bi bi-globe"></i> LANGUAGES</a>
-        <a href="/" class="text-dark me-3">EN</a>
-        <a href="/" class="text-dark me-3">ES</a>
-        <a href="/" class="text-dark me-3">IT</a>
-        <a href="/" class="text-dark me-3"><i class="bi bi-instagram"></i> Instagram</a>
+        <a href="http://127.0.0.1:3000/JSON-Server/index.html" class="text-dark me-3">
+          <i class="bi bi-person-fill-gear"></i> Dashboard
+        </a>
       </div>
 
-      <div class="d-flex align-items-center">
-        <a href="/" class="text-dark me-3"><i class="bi bi-cup-straw"></i> HAPPY HOUR</a>
-        <a href="/" class="text-dark me-3"><i class="bi bi-bicycle"></i> FOOD DELIVERY</a>
+      <div class="d-flex align-items-center text-nowrap">
+        <a href="/" class="text-dark me-3">
+          <i class="bi bi-telephone-fill"></i> +2012111174738
+        </a>
+<a href="mailto:contact&#64;bakerysweet.com" class="text-dark me-3">
+  <i class="bi bi-envelope-at-fill"></i> contact&#64;bakerysweet.com
+</a>
+
       </div>
 
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-solid bg-solid shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
 
-      <a class="navbar-brand ms-3 fw-bold" [routerLink]="['/']">
+      <a class="navbar-brand ms-3 fw-bold" [routerLink]="['/']" (click)="setActive('home')">
         BAKERY SWEET <i class="bi bi-fork-knife"></i>
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav gap-4">
+        <ul class="navbar-nav gap-2 gap-lg-4">
           <li class="nav-item">
-            <a class="nav-link custom-link" [class.active-link]="activeLink === 'home'" routerLink="/home">HOME</a>
+            <a class="nav-link custom-link"
+               [class.active-link]="activeLink === 'home'"
+               routerLink="/home"
+               (click)="setActive('home')">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link custom-link" [class.active-link]="activeLink === 'about'" routerLink="/about">ABOUT</a>
+            <a class="nav-link custom-link"
+               [class.active-link]="activeLink === 'about'"
+               routerLink="/about"
+               (click)="setActive('about')">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link custom-link" [class.active-link]="activeLink === 'product'" routerLink="/product">PRODUCT</a>
+            <a class="nav-link custom-link"
+               [class.active-link]="activeLink === 'product'"
+               routerLink="/product"
+               (click)="setActive('product')">PRODUCT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link custom-link" [class.active-link]="activeLink === 'contact'" routerLink="/contact">CONTACT</a>
+            <a class="nav-link custom-link"
+               [class.active-link]="activeLink === 'contact'"
+               routerLink="/contact"
+               (click)="setActive('contact')">CONTACT</a>
+          </li>
+
+          <li class="nav-item d-lg-none">
+            <a class="btn btn-warning w-100 my-2" routerLink="/cart" (click)="setActive('')">🛒 Cart</a>
           </li>
         </ul>
       </div>
 
-      <div class="ms-auto">
-        <a class="btn btn-warning px-3" routerLink="/cart">
-          🛒 Cart
-        </a>
+      <div class="ms-auto d-none d-lg-inline-flex">
+        <a class="btn btn-warning px-3" routerLink="/cart" (click)="setActive('')">🛒 Cart</a>
       </div>
 
     </div>
   </nav>
-
 </div>

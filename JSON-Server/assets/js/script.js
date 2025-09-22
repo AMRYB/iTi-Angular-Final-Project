@@ -1,5 +1,5 @@
+/*cd "JSON-server"*/ 
 /* npx json-server --watch db.json --port 3000 */
-/*"cd "JSON-server*/
 
 'use strict';
 
@@ -139,7 +139,7 @@ async function loadAll() {
             console.warn('cats load failed', e);
             return [];
          }),
-         api('/products').catch(e => {
+         api('/product').catch(e => {
             console.warn('products load failed', e);
             return [];
          })
