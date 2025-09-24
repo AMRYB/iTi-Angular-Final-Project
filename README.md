@@ -1,27 +1,100 @@
-# Task3
+# 🍞 Bakery Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+This is the **README** for our ITI Summer Training graduation project.
+We successfully completed the project, which was a hands-on application of everything we learned.
 
-## Development server
+## 🛠️ Tech Stack
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* **HTML, CSS, JavaScript**
+* **ES.Next** (validation + modern features)
+* **Bootstrap** (for responsive design)
+* **Angular** (routing, components, data binding)
+* **JSON Server** (mock backend API)
 
-## Code scaffolding
+## 📌 Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* **Dashboard**
 
-## Build
+  * Add/manage items (cakes, bread, cookies, etc.)
+* **Team Page**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+  * Show team members (names, photos, social accounts for contact)
+* **Routing**
 
-## Running unit tests
+  * Smooth navigation between pages
+  * Connected with **JSON Server** for CRUD operations
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🏠 Pages
 
-## Running end-to-end tests
+* **Home**
+* **About**
+* **Products** (core functionality: search, add, filter)
+* **Contact**
+* **Cart** (manage added products + checkout)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Sequence Diagram(s)
+
+```mermaid
+sequenceDiagram
+  autonumber
+  actor U as User
+  participant UI as Admin UI (index.html)
+  participant JS as script.js
+  participant API as JSON-Server (/categories,/product)
+
+  U->>UI: Load Admin
+  UI->>JS: init()
+  JS->>API: GET /categories, GET /product (parallel)
+  API-->>JS: categories[], product[]
+  JS->>UI: hydrate selects, table, stats
+
+  U->>UI: Add/Edit/Delete Product/Category
+  UI->>JS: submit action
+  JS->>API: POST/PATCH/DELETE
+  API-->>JS: 2xx/4xx
+  JS->>UI: update in-memory, re-render table/stats
+  JS-->>U: show message
+```
+
+```mermaid
+sequenceDiagram
+  autonumber
+  actor U as Shopper
+  participant PC as ProductComponent
+  participant PS as ProductService (HttpClient)
+  participant CS as CartService
+  participant CC as CartComponent
+  participant API as JSON-Server
+
+  U->>PC: View Products
+  PC->>PS: getAll()
+  PS->>API: GET /product
+  API-->>PS: products[]
+  PS-->>PC: Observable<products[]>
+  PC->>U: Render grid
+
+  U->>PC: Click "Add to cart"
+  PC->>CS: add(product, qty=1)
+
+  U->>CC: Open Cart
+  CC->>CS: getItems(), getSubTotal(), getGrandTotal(includeShipping)
+  CC->>U: Render items, totals
+  U->>CC: Update qty / Remove
+  CC->>CS: updateQty/remove
+  CS-->>CC: updated totals
+  CC->>U: Show new totals
+```
+
+---
+
+## 🎯 Goal
+
+The project simulates an **online bakery store**, where users can browse products, add them to the cart, and manage their shopping process.
+
+## 🤝 Team
+
+Special thanks to my amazing team for the effort and collaboration we put in to deliver the project in the best way possible.
+**We’re proud of what we achieved 🙌**
